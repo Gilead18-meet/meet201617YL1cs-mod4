@@ -1,11 +1,13 @@
 #FIX THE LINE BELOW
-class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
+class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits from str
     """
     Build a subclass of str with some new, fun methods.
     """
     #The first method is done for you; you must complete the second (replace).
     
     def exclaim(self,num):
+
+        
         """
         Add num exclamation points to string.
         (We did this example in class.)
@@ -16,6 +18,11 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         return self+'!'*num
 
     def replace(self, take_out, use_this):
+        
+
+
+
+
         """
         Override the replace method of string.
         The new replace method is case-insensitive,
@@ -49,4 +56,13 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
+
+        test=super (MyStr,self).lower().replace(take_out.lower(),use_this)
+        return test
+
+
+
+
+
+
         

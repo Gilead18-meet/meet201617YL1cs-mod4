@@ -1,0 +1,2 @@
+hElLO=hello
+hello.lower()
